@@ -1,0 +1,196 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.container{
+    position: relative;
+    height: 800px;
+}
+#map{
+    z-index: 0;
+    height: 120%;
+    width: 100%;
+}
+.aside{
+    width: 400px;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    transition: 0.5s;
+}
+.aside.open{
+    transform: translateX(-400px);
+}
+.aside_top{
+    background-color:#73C0D8 ;
+    padding: 15px;
+    
+}
+.content{
+    justify-content: space-between;
+    color: snow;
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+}
+.day{
+    font-size: 39px;
+}
+.date{
+    text-align: right;
+}
+.odd,.even{
+    display: none;
+}
+.mask{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.adult{
+    background-color:dodgerblue;
+    color:snow;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 20px;
+}
+.child{
+    background-color:crimson;
+    color: snow;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 20px;
+}
+.area{
+    
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+}
+.yellow{
+    font-size: 20px;
+    color: yellow;
+    
+}
+.list{
+    list-style-type: none ;
+    overflow:scroll;
+    height: 100%;
+background-color: snow;
+}
+.listli{
+    background-color: snow;
+    padding: 20px;
+    border-bottom: 3px solid gainsboro;
+}
+.shop{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.address{
+    margin-bottom: 15px;
+}
+.phone{
+    margin-bottom: 15px;
+}
+.sideBar{
+    position: absolute;
+    left: 100%;
+    background-color: gold;
+    height: 90px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 5px 5px 0;
+}
+.town,.point{
+    width: 110px;
+    text-align: center;
+}
+.marker-cluster-small {
+		background-color: rgba(181, 226, 140, 0.6);
+		}
+	.marker-cluster-small div {
+		background-color: rgba(110, 204, 57, 0.6);
+		}
+
+	.marker-cluster-medium {
+		background-color: rgba(241, 211, 87, 0.6);
+		}
+	.marker-cluster-medium div {
+		background-color: rgba(240, 194, 12, 0.6);
+		}
+
+	.marker-cluster-large {
+		background-color: rgba(253, 156, 115, 0.6);
+		}
+	.marker-cluster-large div {
+		background-color: rgba(241, 128, 23, 0.6);
+		}
+
+	.marker-cluster {
+		background-clip: padding-box;
+		border-radius: 20px;
+		}
+	.marker-cluster div {
+		width: 30px;
+		height: 30px;
+		margin-left: 5px;
+		margin-top: 5px;
+
+		text-align: center;
+		border-radius: 15px;
+		font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;
+		}
+	.marker-cluster span {
+		line-height: 30px;
+		}
+.path{
+    float:right;
+}

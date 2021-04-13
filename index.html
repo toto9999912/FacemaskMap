@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>口罩地圖API</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.css">
+    </link>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.Default.css">
+    </link>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="map">
+
+        </div>
+        <div class="aside">
+            <div class="aside_top">
+                <div class="content">
+                    <div>
+                        <p class="day">星期<span></span></p>
+                    </div>
+                    <div>
+                        <p class="date">2021/8/7</p>
+                        <p class="odd">身分證末碼為<span class="yellow">1.3.5.7.9</span>可購買</p>
+                        <p class="even">身分證末碼為<span class="yellow">0.2.4.6.8</span>可購買</p>
+                    </div>
+
+
+                </div>
+                <div class="area pure-form pure-form-stacked">
+                    <select name="" id="" class="search town">
+                        <option value="" disabled selected>-- 請選擇 --</option>
+                    </select>
+
+                    <select name="" id="" class="search point">
+                        <option value="" disabled selected>-- 請選擇 --</option>
+                    </select>
+                </div>
+            </div>
+            <div class="sideBar">
+                <i class="fas fa-chevron-left fa-lg"></i>
+                <i class="fas fa-chevron-right fa-lg"></i>
+            </div>
+            <div class="list">
+                <li class="listli">
+                    <div>
+                        <h2 class="shop"></h2>
+                        <p class="address"></p>
+                        <p class="phone"></p>
+                        <p class="item"></p>
+                    </div>
+                    <div class="mask">
+                        <p class="adult"></p>
+                        <p class="child"></p>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="all.js"></script>
+
+</body>
+
+</html>
